@@ -1,0 +1,79 @@
+:root {
+    --cream: #fffdd0; /*Background color*/
+    --mint-green: #3eb489;/* Main Details and text*/
+   
+}
+body{
+    background-color: var(--cream);
+    color: var(--mint-green);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    margin: 10px;
+}
+.game-card {
+    border: 3px solid var(--mint-green);
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 450px;
+    box-shadow: 10px 10px 0px 0px var(--mint-green);
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+
+}
+.button-container{
+    display: flex;
+    justify-content:space-between;
+    gap: 15px;
+    margin-bottom: 3rem;
+}
+.choice-btn{
+    flex: 1;
+    background-color: transparent;
+    color: var(--mint-green);
+    border: 2px solid var(--mint-green);
+    padding: 15px 15px 0px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.choice-btn:hover {
+    background-color: var(--mint-green);
+    color: var(--cream);
+    transform: translateY(-5px);
+}
+.emoji{
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+.game-details{
+    background-color:var(--cream);
+    padding: 20px;
+    margin-border: 25px;
+}
+.score-row{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+hr{
+    border: none;
+    border-top: 1px solid var(--mint-green);
+    margin: 15 px 0px 0px 0px;
+    opacity: 0.3;
+
+}
+#winner-text{
+    margin: 0;
+    font-size: 1.5rem;
+}
